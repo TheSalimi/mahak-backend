@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Domain.csproj",
-      "projectName": "mahakBackend.Domain",
-      "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Domain.csproj",
+      "projectUniqueName": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj",
+      "projectName": "mahakBackend.Core.Domain",
+      "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj",
       "packagesPath": "C:\\Users\\persia\\.nuget\\packages\\",
       "outputPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\obj\\",
       "projectStyle": "PackageReference",

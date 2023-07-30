@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9aiEjXiiBG89bp+qWGIuOfCmSVMq9hKdbkc4Xo96YaciZ6GGYv8f1bm87D0ImW1J394ERkrYRtQdKmJZtxNIRQ==",
+  "dgSpecHash": "dU/G+eMYRP8+uQuZEobtR+eSSrJl2LVY34XQyUgHv9Z0L2DWTj+CqGlddZqzpu6kxPaw3C2qyh0lfsl/H3nEGA==",
   "success": true,
-  "projectFilePath": "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Application.csproj",
+  "projectFilePath": "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
