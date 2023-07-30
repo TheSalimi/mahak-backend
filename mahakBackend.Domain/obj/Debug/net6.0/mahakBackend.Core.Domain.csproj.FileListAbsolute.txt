@@ -1,0 +1,14 @@
+G:\mahakProject\mahak backend\mahakBackend.Domain\bin\Debug\net6.0\mahakBackend.Core.Domain.deps.json
+G:\mahakProject\mahak backend\mahakBackend.Domain\bin\Debug\net6.0\mahakBackend.Core.Domain.runtimeconfig.json
+G:\mahakProject\mahak backend\mahakBackend.Domain\bin\Debug\net6.0\mahakBackend.Core.Domain.dll
+G:\mahakProject\mahak backend\mahakBackend.Domain\bin\Debug\net6.0\mahakBackend.Core.Domain.pdb
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.csproj.AssemblyReference.cache
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.AssemblyInfoInputs.cache
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.AssemblyInfo.cs
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.csproj.CoreCompileInputs.cache
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.dll
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\refint\mahakBackend.Core.Domain.dll
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.pdb
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\mahakBackend.Core.Domain.genruntimeconfig.cache
+G:\mahakProject\mahak backend\mahakBackend.Domain\obj\Debug\net6.0\ref\mahakBackend.Core.Domain.dll

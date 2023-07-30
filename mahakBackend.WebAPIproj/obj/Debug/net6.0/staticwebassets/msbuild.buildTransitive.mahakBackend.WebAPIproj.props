@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\mahakBackend.WebAPIproj.props" />
+</Project>
