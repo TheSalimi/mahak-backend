@@ -7,7 +7,7 @@ namespace mahakBackend.Infrastructure.Data
     {
         public MahakDbContext(DbContextOptions<MahakDbContext> options) : base(options) { }
         public DbSet<RoleEntity> Roles { get; set; }
-        public DbSet<UserEntity> Entities { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
         public DbSet<User_RoleEntity> UserRole { get; set; }
     }
 }
