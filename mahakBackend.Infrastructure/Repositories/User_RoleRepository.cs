@@ -42,11 +42,5 @@ namespace mahakBackend.Infrastructure.Repositories
                 u =>  _DbContext.UserRole.Any(
                     x => x.RoleId==RoleId && u.Id == x.UserId)).ToList();
         }
-
-        public void Update(User_RoleEntity user_role)
-        {
-            _DbContext.UserRole.Update(user_role);
-            _DbContext.SaveChanges();
-        }
     }
 }

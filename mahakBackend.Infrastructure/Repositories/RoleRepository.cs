@@ -15,7 +15,7 @@ namespace mahakBackend.Infrastructure.Repositories
         public void Add(RoleEntity role)
         {
             _DbContext.Roles.Add(role);
-            _DbContext.SaveChanges();   
+            _DbContext.SaveChanges();
         }
 
         public void Delete(int id)
@@ -24,7 +24,7 @@ namespace mahakBackend.Infrastructure.Repositories
             if (selectedRole != null)
             {
                 _DbContext.Roles.Remove(selectedRole);
-                _DbContext.SaveChanges();  
+                _DbContext.SaveChanges();
             }
 
         }
@@ -36,14 +36,20 @@ namespace mahakBackend.Infrastructure.Repositories
 
         public RoleEntity GetById(int id)
         {
-            var selectedRole = _DbContext.Roles.FirstOrDefault(x=>x.Id == id);
+            var selectedRole = _DbContext.Roles.FirstOrDefault(x => x.Id == id);
             return selectedRole;
         }
 
         public void Update(RoleEntity role)
         {
-            _DbContext.Roles.Update(role);
-            _DbContext.SaveChanges();
+            var SelectedRole = _DbContext.Roles.FirstOrDefault(x => x.Id == role.Id);
+            if (SelectedRole != null)
+            {
+                SelectedRole.Name = role.Name;
+                SelectedRole.IconId = role.IconId;
+                SelectedRole.ColorId = role.ColorId;
+                _DbContext.SaveChanges();
+            }
         }
     }
 }

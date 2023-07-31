@@ -31,10 +31,5 @@ namespace mahakBackend.Core.Application.services
         {
             throw new NotImplementedException();
         }
-
-        public void Update(User_RoleEntity user_role)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

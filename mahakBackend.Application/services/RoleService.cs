@@ -13,27 +13,27 @@ namespace mahakBackend.Core.Application.services
         }
         public void Add(RoleEntity role)
         {
-            throw new NotImplementedException();
+            _roleRepository.Add(role);
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            _roleRepository.Delete(id);
         }
 
         public IEnumerable<RoleEntity> GetAllRoles()
         {
-            throw new NotImplementedException();
+            return _roleRepository.GetAllRoles();
         }
 
         public RoleEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            return _roleRepository.GetById(id);
         }
 
         public void Update(RoleEntity role)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

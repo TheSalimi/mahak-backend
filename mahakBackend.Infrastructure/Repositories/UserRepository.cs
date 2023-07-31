@@ -1,6 +1,7 @@
 ﻿using mahakBackend.Core.Domain.entities;
 using mahakBackend.Core.Domain.Irepository;
 using mahakBackend.Infrastructure.Data;
+using System.Data;
 
 namespace mahakBackend.Infrastructure.Repositories
 {
@@ -40,8 +41,20 @@ namespace mahakBackend.Infrastructure.Repositories
 
         public void Update(UserEntity user)
         {
-            _DbContext.Users.Update(user);
-            _DbContext.SaveChanges();
+            var SelectedUser = _DbContext.Users.FirstOrDefault(x => x.Id == user.Id);
+            if (SelectedUser != null)
+            {
+                SelectedUser.Name = user.Name;
+                SelectedUser.Email = user.Email;
+                SelectedUser.UserCode = user.UserCode;
+                SelectedUser.Group = user.Group;
+                SelectedUser.Description = user.Description;
+                SelectedUser.JoinDate = user.JoinDate;
+                SelectedUser.LastActivity = user.LastActivity;
+                SelectedUser.isAdded = user.isAdded;
+
+                _DbContext.SaveChanges();
+            }
         }
     }
 }
