@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\mahakBackend.Application\mahakBackend.Core.Application.csproj" />
+    <ProjectReference Include="..\mahakBackend.Domain\mahakBackend.Core.Domain.csproj" />
     <ProjectReference Include="..\mahakBackend.Infrastructure\mahakBackend.Infrastructure.csproj" />
   </ItemGroup>
 

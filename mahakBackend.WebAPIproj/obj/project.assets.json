@@ -1262,6 +1262,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "mahakBackend.Core.Application": "1.0.0",
           "mahakBackend.Core.Domain": "1.0.0"
         },
         "compile": {
@@ -3950,6 +3951,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "mahakBackend.Core.Application >= 1.0.0",
+      "mahakBackend.Core.Domain >= 1.0.0",
       "mahakBackend.Infrastructure >= 1.0.0"
     ]
   },
@@ -3987,6 +3989,9 @@
           "projectReferences": {
             "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj": {
               "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj"
+            },
+            "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj": {
+              "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj"
             },
             "G:\\mahakProject\\mahak backend\\mahakBackend.Infrastructure\\mahakBackend.Infrastructure.csproj": {
               "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Infrastructure\\mahakBackend.Infrastructure.csproj"

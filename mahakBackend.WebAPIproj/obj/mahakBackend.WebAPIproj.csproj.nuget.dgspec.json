@@ -163,6 +163,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj": {
+                "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj"
+              },
               "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj": {
                 "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj"
               }
@@ -240,6 +243,9 @@
             "projectReferences": {
               "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj": {
                 "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Application\\mahakBackend.Core.Application.csproj"
+              },
+              "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj": {
+                "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj"
               },
               "G:\\mahakProject\\mahak backend\\mahakBackend.Infrastructure\\mahakBackend.Infrastructure.csproj": {
                 "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Infrastructure\\mahakBackend.Infrastructure.csproj"

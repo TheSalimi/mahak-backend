@@ -11,6 +11,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
           "Swashbuckle.AspNetCore": "6.5.0",
           "mahakBackend.Core.Application": "1.0.0",
+          "mahakBackend.Core.Domain": "1.0.0",
           "mahakBackend.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -761,6 +762,7 @@
       "mahakBackend.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "mahakBackend.Core.Application": "1.0.0",
           "mahakBackend.Core.Domain": "1.0.0"
         },
         "runtime": {
