@@ -33,7 +33,7 @@ namespace mahakBackend.Core.Application.services
 
         public void Update(RoleEntity role)
         {
-            
+            _roleRepository.Update(role);
         }
     }
 }

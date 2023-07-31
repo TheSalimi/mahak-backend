@@ -14,22 +14,22 @@ namespace mahakBackend.Core.Application.services
 
         public void Add(User_RoleEntity user_role)
         {
-            throw new NotImplementedException();
+            _user_roleRepository.Add(user_role);
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            _user_roleRepository.Delete(id);
         }
 
         public IEnumerable<RoleEntity> GetRolesByUserCode(long UserCode)
         {
-            throw new NotImplementedException();
+            return _user_roleRepository.GetRolesByUserCode(UserCode);
         }
 
         public IEnumerable<UserEntity> GetUsersByRoleId(int RoleId)
         {
-            throw new NotImplementedException();
+            return _user_roleRepository.GetUsersByRoleId(RoleId);
         }
     }
 }

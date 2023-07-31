@@ -15,27 +15,27 @@ namespace mahakBackend.Core.Application.services
 
         public void Add(UserEntity user)
         {
-            throw new NotImplementedException();
+            _userRepository.Add(user);
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            _userRepository.Delete(id);
         }
 
         public IEnumerable<UserEntity> GetAllUsers()
         {
-            throw new NotImplementedException();
+            return _userRepository.GetAllUsers();
         }
 
         public UserEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            return _userRepository.GetById(id);
         }
 
         public void Update(UserEntity user)
         {
-            throw new NotImplementedException();
+            _userRepository.Update(user);
         }
     }
 }
