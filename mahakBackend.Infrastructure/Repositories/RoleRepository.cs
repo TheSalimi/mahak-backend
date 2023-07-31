@@ -14,27 +14,36 @@ namespace mahakBackend.Infrastructure.Repositories
 
         public void Add(RoleEntity role)
         {
-            throw new NotImplementedException();
+            _DbContext.Roles.Add(role);
+            _DbContext.SaveChanges();   
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var selectedRole = _DbContext.Roles.FirstOrDefault(u => u.Id == id);
+            if (selectedRole != null)
+            {
+                _DbContext.Roles.Remove(selectedRole);
+                _DbContext.SaveChanges();  
+            }
+
         }
 
         public IEnumerable<RoleEntity> GetAllRoles()
         {
-            throw new NotImplementedException();
+            return _DbContext.Roles.ToList();
         }
 
         public RoleEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            var selectedRole = _DbContext.Roles.FirstOrDefault(x=>x.Id == id);
+            return selectedRole;
         }
 
         public void Update(RoleEntity role)
         {
-            throw new NotImplementedException();
+            _DbContext.Roles.Update(role);
+            _DbContext.SaveChanges();
         }
     }
 }
