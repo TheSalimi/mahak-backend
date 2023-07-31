@@ -15,5 +15,6 @@
         }
         public string? Group { get; set; }
         public string? Description { get; set; }
+        public bool? isAdded { get; set;}
     }
 }
