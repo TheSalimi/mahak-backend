@@ -1,8 +1,8 @@
 ﻿using mahakBackend.Core.Domain.entities;
 
-namespace mahakBackend.Core.Domain.Iservice
+namespace mahakBackend.Core.Domain.Irepository
 {
-    public interface IUserService
+    public interface IUserRepository
     {
         IEnumerable<UserEntity> GetAllUsers();
         UserEntity GetById(int id);
