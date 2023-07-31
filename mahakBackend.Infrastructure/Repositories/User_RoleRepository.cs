@@ -14,27 +14,39 @@ namespace mahakBackend.Infrastructure.Repositories
 
         public void Add(User_RoleEntity user_role)
         {
-            throw new NotImplementedException();
+            _DbContext.UserRole.Add(user_role);
+            _DbContext.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var selectedUserRole = _DbContext.UserRole.FirstOrDefault(x => x.Id == id);
+            if (selectedUserRole != null)
+            {
+                _DbContext.UserRole.Remove(selectedUserRole);
+                _DbContext.SaveChanges();
+            }
         }
 
         public IEnumerable<RoleEntity> GetRolesByUserCode(long UserCode)
         {
-            throw new NotImplementedException();
+            return _DbContext.Roles.Where(
+                u => _DbContext.UserRole.Any(x => x.RoleId == u.Id
+                && _DbContext.Users.Any(y => y.Id == x.UserId && y.UserCode == UserCode)
+                )).ToList();
         }
 
         public IEnumerable<UserEntity> GetUsersByRoleId(int RoleId)
         {
-            throw new NotImplementedException();
+            return _DbContext.Users.Where(
+                u =>  _DbContext.UserRole.Any(
+                    x => x.RoleId==RoleId && u.Id == x.UserId)).ToList();
         }
 
         public void Update(User_RoleEntity user_role)
         {
-            throw new NotImplementedException();
+            _DbContext.UserRole.Update(user_role);
+            _DbContext.SaveChanges();
         }
     }
 }
