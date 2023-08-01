@@ -1,5 +1,6 @@
 ﻿using mahakBackend.Core.Domain.entities;
 using mahakBackend.Core.Domain.Irepository;
+using mahakBackend.Core.Domain.Iservice;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata.Ecma335;
 
@@ -9,28 +10,29 @@ namespace mahakBackend.WebAPIproj.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserRepository _userRepository;   
-        public UserController(IUserRepository userRepository)
+        private readonly IUserService _userService;
+        public UserController(IUserService userService)
         {
-            _userRepository = userRepository;
+            _userService = userService;
         }
 
         [HttpPost]
         public IActionResult AddUser([FromBody] UserEntity user)
         {
-            if(user == null)
+            if (user == null)
             {
                 return BadRequest("User data is null");
             }
-            _userRepository.Add(user);
+            _userService.Add(user);
             return Ok("User added successfully.");
         }
 
         [HttpGet("{id}")]
         public IActionResult GetUser(int id)
         {
-            var user = _userRepository.GetById(id);
-            if (user==null){
+            var user = _userService.GetById(id);
+            if (user == null)
+            {
                 return BadRequest("There is no user with this ID!");
             }
             return Ok(user);
@@ -43,32 +45,25 @@ namespace mahakBackend.WebAPIproj.Controllers
             {
                 return BadRequest("There is no user with this ID!");
             }
-            _userRepository.Update(user);
+            _userService.Update(user);
             return Ok("User updated successfully.");
         }
 
         [HttpDelete]
         public IActionResult DeleteUser(int id)
         {
-            if (_userRepository.GetById(id) == null)
+            if (_userService.GetById(id) == null)
             {
                 return BadRequest("There is no user with this ID!");
             }
-            _userRepository.Delete(id);
+            _userService.Delete(id);
             return Ok("User updated successfully.");
         }
 
         [HttpGet]
-        public IActionResult GetAllUsers() { 
-            var userList = _userRepository.GetAllUsers();
-            if(userList == null)
-            {
-                return BadRequest("There is no user");
-            }
-            else
-            {
-                return Ok(userList);
-            }
+        public IActionResult GetAllUsers()
+        {
+            return Ok(_userService.GetAllUsers());
         }
     }
 }

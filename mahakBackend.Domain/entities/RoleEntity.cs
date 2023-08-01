@@ -3,8 +3,8 @@
     public class RoleEntity
     {
         public int Id { get; set; }
-        public long Name { get; set; }
-        public string? ColorId { get; set; }
-        public string? IconId { get; set; }
+        public string Name { get; set; }
+        public int? ColorId { get; set; }
+        public int? IconId { get; set; }
     }
 }

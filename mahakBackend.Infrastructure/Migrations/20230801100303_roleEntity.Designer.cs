@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using mahakBackend.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using mahakBackend.Infrastructure.Data;
 namespace mahakBackend.Infrastructure.Migrations
 {
     [DbContext(typeof(MahakDbContext))]
-    partial class MahakDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230801100303_roleEntity")]
+    partial class roleEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,9 +39,8 @@ namespace mahakBackend.Infrastructure.Migrations
                     b.Property<int?>("IconId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("Name")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
