@@ -18,6 +18,7 @@
     <ProjectReference Include="..\mahakBackend.Application\mahakBackend.Core.Application.csproj" />
     <ProjectReference Include="..\mahakBackend.Domain\mahakBackend.Core.Domain.csproj" />
     <ProjectReference Include="..\mahakBackend.Infrastructure\mahakBackend.Infrastructure.csproj" />
+    <ProjectReference Include="..\mahakBackend.Shared.Date\mahakBackend.Shared.Date.csproj" />
   </ItemGroup>
 
 </Project>

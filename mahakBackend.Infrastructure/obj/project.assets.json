@@ -1181,6 +1181,16 @@
         "runtime": {
           "bin/placeholder/mahakBackend.Core.Domain.dll": {}
         }
+      },
+      "mahakBackend.Shared.Date/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/mahakBackend.Shared.Date.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/mahakBackend.Shared.Date.dll": {}
+        }
       }
     }
   },
@@ -3536,6 +3546,11 @@
       "type": "project",
       "path": "../mahakBackend.Domain/mahakBackend.Core.Domain.csproj",
       "msbuildProject": "../mahakBackend.Domain/mahakBackend.Core.Domain.csproj"
+    },
+    "mahakBackend.Shared.Date/1.0.0": {
+      "type": "project",
+      "path": "../mahakBackend.Shared.Date/mahakBackend.Shared.Date.csproj",
+      "msbuildProject": "../mahakBackend.Shared.Date/mahakBackend.Shared.Date.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3543,7 +3558,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "mahakBackend.Core.Application >= 1.0.0",
-      "mahakBackend.Core.Domain >= 1.0.0"
+      "mahakBackend.Core.Domain >= 1.0.0",
+      "mahakBackend.Shared.Date >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3582,6 +3598,9 @@
             },
             "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj": {
               "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj"
+            },
+            "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj": {
+              "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj"
             }
           }
         }

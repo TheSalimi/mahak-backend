@@ -1263,13 +1263,24 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
           "mahakBackend.Core.Application": "1.0.0",
-          "mahakBackend.Core.Domain": "1.0.0"
+          "mahakBackend.Core.Domain": "1.0.0",
+          "mahakBackend.Shared.Date": "1.0.0"
         },
         "compile": {
           "bin/placeholder/mahakBackend.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/mahakBackend.Infrastructure.dll": {}
+        }
+      },
+      "mahakBackend.Shared.Date/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/mahakBackend.Shared.Date.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/mahakBackend.Shared.Date.dll": {}
         }
       }
     }
@@ -3944,6 +3955,11 @@
       "type": "project",
       "path": "../mahakBackend.Infrastructure/mahakBackend.Infrastructure.csproj",
       "msbuildProject": "../mahakBackend.Infrastructure/mahakBackend.Infrastructure.csproj"
+    },
+    "mahakBackend.Shared.Date/1.0.0": {
+      "type": "project",
+      "path": "../mahakBackend.Shared.Date/mahakBackend.Shared.Date.csproj",
+      "msbuildProject": "../mahakBackend.Shared.Date/mahakBackend.Shared.Date.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3952,7 +3968,8 @@
       "Swashbuckle.AspNetCore >= 6.5.0",
       "mahakBackend.Core.Application >= 1.0.0",
       "mahakBackend.Core.Domain >= 1.0.0",
-      "mahakBackend.Infrastructure >= 1.0.0"
+      "mahakBackend.Infrastructure >= 1.0.0",
+      "mahakBackend.Shared.Date >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3995,6 +4012,9 @@
             },
             "G:\\mahakProject\\mahak backend\\mahakBackend.Infrastructure\\mahakBackend.Infrastructure.csproj": {
               "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Infrastructure\\mahakBackend.Infrastructure.csproj"
+            },
+            "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj": {
+              "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj"
             }
           }
         }

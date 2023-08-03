@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.9",
           "mahakBackend.Core.Application": "1.0.0",
-          "mahakBackend.Core.Domain": "1.0.0"
+          "mahakBackend.Core.Domain": "1.0.0",
+          "mahakBackend.Shared.Date": "1.0.0"
         },
         "runtime": {
           "mahakBackend.Infrastructure.dll": {}
@@ -715,6 +716,11 @@
         "runtime": {
           "mahakBackend.Core.Domain.dll": {}
         }
+      },
+      "mahakBackend.Shared.Date/1.0.0": {
+        "runtime": {
+          "mahakBackend.Shared.Date.dll": {}
+        }
       }
     }
   },
@@ -1206,6 +1212,11 @@
       "sha512": ""
     },
     "mahakBackend.Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "mahakBackend.Shared.Date/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

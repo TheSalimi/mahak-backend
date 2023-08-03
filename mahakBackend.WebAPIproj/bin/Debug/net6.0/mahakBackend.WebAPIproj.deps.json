@@ -12,7 +12,8 @@
           "Swashbuckle.AspNetCore": "6.5.0",
           "mahakBackend.Core.Application": "1.0.0",
           "mahakBackend.Core.Domain": "1.0.0",
-          "mahakBackend.Infrastructure": "1.0.0"
+          "mahakBackend.Infrastructure": "1.0.0",
+          "mahakBackend.Shared.Date": "1.0.0"
         },
         "runtime": {
           "mahakBackend.WebAPIproj.dll": {}
@@ -763,10 +764,16 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
           "mahakBackend.Core.Application": "1.0.0",
-          "mahakBackend.Core.Domain": "1.0.0"
+          "mahakBackend.Core.Domain": "1.0.0",
+          "mahakBackend.Shared.Date": "1.0.0"
         },
         "runtime": {
           "mahakBackend.Infrastructure.dll": {}
+        }
+      },
+      "mahakBackend.Shared.Date/1.0.0": {
+        "runtime": {
+          "mahakBackend.Shared.Date.dll": {}
         }
       }
     }
@@ -1299,6 +1306,11 @@
       "sha512": ""
     },
     "mahakBackend.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "mahakBackend.Shared.Date/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

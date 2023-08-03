@@ -21,7 +21,7 @@ namespace mahakBackend.WebAPIproj.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetAllById(int id)
+        public IActionResult GetById(int id)
         {
            var role = _roleService.GetById(id);
             if(role == null)

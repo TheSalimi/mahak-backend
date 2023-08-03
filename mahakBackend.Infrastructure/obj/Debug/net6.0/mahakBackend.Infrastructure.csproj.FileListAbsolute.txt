@@ -17,3 +17,5 @@ G:\mahakProject\mahak backend\mahakBackend.Infrastructure\obj\Debug\net6.0\mahak
 G:\mahakProject\mahak backend\mahakBackend.Infrastructure\obj\Debug\net6.0\ref\mahakBackend.Infrastructure.dll
 G:\mahakProject\mahak backend\mahakBackend.Infrastructure\bin\Debug\net6.0\mahakBackend.Core.Application.dll
 G:\mahakProject\mahak backend\mahakBackend.Infrastructure\bin\Debug\net6.0\mahakBackend.Core.Application.pdb
+G:\mahakProject\mahak backend\mahakBackend.Infrastructure\bin\Debug\net6.0\mahakBackend.Shared.Date.dll
+G:\mahakProject\mahak backend\mahakBackend.Infrastructure\bin\Debug\net6.0\mahakBackend.Shared.Date.pdb

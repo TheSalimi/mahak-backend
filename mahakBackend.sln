@@ -9,13 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrustructure", "Infrustru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{66432F7A-7427-406E-B745-2BF2E2216EBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahakBackend.Core.Domain", "mahakBackend.Domain\mahakBackend.Core.Domain.csproj", "{8472A534-41A6-48AC-AC69-E1FFF84CCA9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mahakBackend.Core.Domain", "mahakBackend.Domain\mahakBackend.Core.Domain.csproj", "{8472A534-41A6-48AC-AC69-E1FFF84CCA9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahakBackend.Core.Application", "mahakBackend.Application\mahakBackend.Core.Application.csproj", "{60218FAB-EA43-4BE6-9F7C-806E8DE4C570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mahakBackend.Core.Application", "mahakBackend.Application\mahakBackend.Core.Application.csproj", "{60218FAB-EA43-4BE6-9F7C-806E8DE4C570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahakBackend.Infrastructure", "mahakBackend.Infrastructure\mahakBackend.Infrastructure.csproj", "{A4A8B9AB-FA7B-4D90-B158-C6D9856E40A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mahakBackend.Infrastructure", "mahakBackend.Infrastructure\mahakBackend.Infrastructure.csproj", "{A4A8B9AB-FA7B-4D90-B158-C6D9856E40A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahakBackend.WebAPIproj", "mahakBackend.WebAPIproj\mahakBackend.WebAPIproj.csproj", "{B453A582-D762-44DC-9584-6469884630C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mahakBackend.WebAPIproj", "mahakBackend.WebAPIproj\mahakBackend.WebAPIproj.csproj", "{B453A582-D762-44DC-9584-6469884630C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C95377BF-BDA3-4D28-A4C2-612752890790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahakBackend.Shared.Date", "mahakBackend.Shared.Date\mahakBackend.Shared.Date.csproj", "{1CE9E103-7C76-4AA0-B0F1-76AEA61399AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{B453A582-D762-44DC-9584-6469884630C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B453A582-D762-44DC-9584-6469884630C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B453A582-D762-44DC-9584-6469884630C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE9E103-7C76-4AA0-B0F1-76AEA61399AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE9E103-7C76-4AA0-B0F1-76AEA61399AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE9E103-7C76-4AA0-B0F1-76AEA61399AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE9E103-7C76-4AA0-B0F1-76AEA61399AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{60218FAB-EA43-4BE6-9F7C-806E8DE4C570} = {CC973D43-CC9E-4C4E-BF0B-9C2C9307ECEB}
 		{A4A8B9AB-FA7B-4D90-B158-C6D9856E40A7} = {8414AA0A-D63E-47A1-919B-76B2CDC5767C}
 		{B453A582-D762-44DC-9584-6469884630C2} = {66432F7A-7427-406E-B745-2BF2E2216EBA}
+		{1CE9E103-7C76-4AA0-B0F1-76AEA61399AF} = {C95377BF-BDA3-4D28-A4C2-612752890790}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60FD5EE4-2389-4BC1-ACD0-CEAAE84E4D47}
