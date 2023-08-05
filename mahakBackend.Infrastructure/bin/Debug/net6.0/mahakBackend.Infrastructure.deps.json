@@ -12,7 +12,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "7.0.9",
           "mahakBackend.Core.Application": "1.0.0",
           "mahakBackend.Core.Domain": "1.0.0",
-          "mahakBackend.Shared.Date": "1.0.0"
+          "mahakBackend.Shared": "1.0.0"
         },
         "runtime": {
           "mahakBackend.Infrastructure.dll": {}
@@ -717,9 +717,9 @@
           "mahakBackend.Core.Domain.dll": {}
         }
       },
-      "mahakBackend.Shared.Date/1.0.0": {
+      "mahakBackend.Shared/1.0.0": {
         "runtime": {
-          "mahakBackend.Shared.Date.dll": {}
+          "mahakBackend.Shared.dll": {}
         }
       }
     }
@@ -1216,7 +1216,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "mahakBackend.Shared.Date/1.0.0": {
+    "mahakBackend.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

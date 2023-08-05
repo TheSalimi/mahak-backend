@@ -17,12 +17,15 @@ namespace mahakBackend.Infrastructure.Data
             modelBuilder.Entity<User_RoleEntity>()
                 .HasOne(ur => ur.User)
                 .WithMany(u => u.UserRoles)
-                .HasForeignKey(ur => ur.UserId);
+                .HasForeignKey(ur => ur.UserId)
+                .IsRequired(false);
+
 
             modelBuilder.Entity<User_RoleEntity>()
                 .HasOne(ur => ur.Role)
                 .WithMany(r => r.UserRoles)
-                .HasForeignKey(ur => ur.RoleId);
+                .HasForeignKey(ur => ur.RoleId)
+                .IsRequired(false);
         }
     }
 }

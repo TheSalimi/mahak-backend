@@ -22,7 +22,7 @@ namespace mahakBackend.Core.Application.services
             _user_roleRepository.Delete(id);
         }
 
-        public IEnumerable<RoleEntity> GetRolesByUserCode(long UserCode)
+        public IEnumerable<RoleEntity> GetRolesByUserCode(string UserCode)
         {
             return _user_roleRepository.GetRolesByUserCode(UserCode);
         }

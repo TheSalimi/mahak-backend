@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\mahakProject\\mahak backend\\mahakBackend.WebAPI\\mahakBackend.WebAPI.csproj": {}
+    "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj": {}
   },
   "projects": {
-    "G:\\mahakProject\\mahak backend\\mahakBackend.WebAPI\\mahakBackend.WebAPI.csproj": {
+    "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\mahakProject\\mahak backend\\mahakBackend.WebAPI\\mahakBackend.WebAPI.csproj",
-        "projectName": "mahakBackend.WebAPI",
-        "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.WebAPI\\mahakBackend.WebAPI.csproj",
+        "projectUniqueName": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj",
+        "projectName": "mahakBackend.Shared",
+        "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj",
         "packagesPath": "C:\\Users\\persia\\.nuget\\packages\\",
-        "outputPath": "G:\\mahakProject\\mahak backend\\mahakBackend.WebAPI\\obj\\",
+        "outputPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,12 +42,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.5.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -61,9 +54,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

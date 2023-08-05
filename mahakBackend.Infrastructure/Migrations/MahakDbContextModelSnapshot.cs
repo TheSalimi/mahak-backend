@@ -73,8 +73,9 @@ namespace mahakBackend.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("UserCode")
-                        .HasColumnType("bigint");
+                    b.Property<string>("UserCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("isAdded")
                         .HasColumnType("bit");

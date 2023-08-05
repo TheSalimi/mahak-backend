@@ -169,8 +169,8 @@
               "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj": {
                 "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Domain\\mahakBackend.Core.Domain.csproj"
               },
-              "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj": {
-                "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj"
+              "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj": {
+                "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj"
               }
             }
           }
@@ -216,12 +216,12 @@
         }
       }
     },
-    "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj": {
+    "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj",
-        "projectName": "mahakBackend.Shared.Date",
-        "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.Date.csproj",
+        "projectUniqueName": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj",
+        "projectName": "mahakBackend.Shared",
+        "projectPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\mahakBackend.Shared.csproj",
         "packagesPath": "C:\\Users\\persia\\.nuget\\packages\\",
         "outputPath": "G:\\mahakProject\\mahak backend\\mahakBackend.Shared.Date\\obj\\",
         "projectStyle": "PackageReference",

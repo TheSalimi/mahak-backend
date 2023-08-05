@@ -30,7 +30,7 @@ namespace mahakBackend.WebAPIproj.Controllers
         }
 
         [HttpGet("roles/{userCode:long}")]
-        public IActionResult GetRolesById(long userCode) { 
+        public IActionResult GetRolesById(string userCode) { 
             return Ok(_userRoleService.GetRolesByUserCode(userCode));
         }
 
