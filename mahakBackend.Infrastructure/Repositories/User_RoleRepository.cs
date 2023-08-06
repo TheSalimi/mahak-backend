@@ -28,11 +28,11 @@ namespace mahakBackend.Infrastructure.Repositories
             }
         }
 
-        public IEnumerable<RoleEntity> GetRolesByUserCode(string UserCode)
+        public IEnumerable<RoleEntity> GetRolesByUserId(int id)
         {
             return _DbContext.Roles.Where(
                 u => _DbContext.UserRole.Any(x => x.RoleId == u.Id
-                && _DbContext.Users.Any(y => y.Id == x.UserId && y.UserCode == UserCode)
+                && _DbContext.Users.Any(y => y.Id == x.UserId && y.Id == id)
                 )).ToList();
         }
 
