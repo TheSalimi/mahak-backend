@@ -44,3 +44,7 @@ msbuild.wrn
 *.v2
 
 *.vsidx
+*.dll
+
+*.pdb
+*.cache

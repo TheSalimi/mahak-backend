@@ -11,8 +11,6 @@
         public string? Group { get; set; }
         public string? Description { get; set; }
         public bool isAdded { get; set;}
-
-        public ICollection<User_RoleEntity>? UserRoles { get; set; }
+        public int imageId { get; set; }
     }
-
 }
