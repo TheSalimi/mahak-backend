@@ -31,6 +31,11 @@ namespace mahakBackend.Core.Application.services
             return _roleRepository.GetById(id);
         }
 
+        public RoleEntity GetByName(string name)
+        {
+            return _roleRepository.GetByName(name);
+        }
+
         public void Update(RoleEntity role)
         {
             _roleRepository.Update(role);

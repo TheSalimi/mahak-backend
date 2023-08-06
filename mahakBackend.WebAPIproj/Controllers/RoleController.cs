@@ -39,9 +39,15 @@ namespace mahakBackend.WebAPIproj.Controllers
             {
                 return BadRequest("role is null");
             }
-
-            _roleService.Add(role);
-            return Ok("Role has been added successfuly!");
+            else if (_roleService.GetByName(role.Name) == null)
+            {
+                _roleService.Add(role);
+                return Ok("Role has been added successfuly!");
+            }
+            else
+            {
+                return BadRequest("role had been added before");
+            }
         }
 
         [HttpPut]

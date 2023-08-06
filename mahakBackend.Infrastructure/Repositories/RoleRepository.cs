@@ -40,6 +40,12 @@ namespace mahakBackend.Infrastructure.Repositories
             return selectedRole;
         }
 
+        public RoleEntity GetByName(string name)
+        {
+            var role = _DbContext.Roles.FirstOrDefault(x => x.Name == name);
+            return role;
+        }
+
         public void Update(RoleEntity role)
         {
             var SelectedRole = _DbContext.Roles.FirstOrDefault(x => x.Id == role.Id);

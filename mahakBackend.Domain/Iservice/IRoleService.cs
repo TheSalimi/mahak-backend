@@ -6,6 +6,7 @@ namespace mahakBackend.Core.Domain.Iservice
     {
         IEnumerable<RoleEntity> GetAllRoles();
         RoleEntity GetById(int id);
+        RoleEntity GetByName(string name);
         void Add(RoleEntity role);
         void Update(RoleEntity role);
         void Delete(int id);
