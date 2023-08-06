@@ -51,7 +51,7 @@ namespace mahakBackend.WebAPIproj.Controllers
             return Ok("user-rule deleted");
         }
 
-        [HttpGet("roles/{userCode}")]
+        [HttpGet("roles/{id}")]
         public IActionResult GetRolesById(int id) { 
             return Ok(_userRoleService.GetRolesByUserId(id));
         }
