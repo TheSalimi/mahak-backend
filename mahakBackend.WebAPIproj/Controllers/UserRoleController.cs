@@ -1,5 +1,4 @@
-﻿using mahakBackend.Core.Application.services;
-using mahakBackend.Core.Domain.entities;
+﻿using mahakBackend.Core.Domain.entities;
 using mahakBackend.Core.Domain.Iservice;
 using mahakBackend.WebAPIproj.ViewModel;
 using Microsoft.AspNetCore.Mvc;

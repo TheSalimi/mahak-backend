@@ -52,7 +52,8 @@ namespace mahakBackend.Infrastructure.Repositories
                 SelectedUser.JoinDate = user.JoinDate;
                 SelectedUser.LastActivity = user.LastActivity;
                 SelectedUser.isAdded = user.isAdded;
-                SelectedUser.imageId = user.imageId;    
+                SelectedUser.imageId = user.imageId;
+                SelectedUser.phoneNumber = user.phoneNumber;
                 _DbContext.SaveChanges();
             }
         }

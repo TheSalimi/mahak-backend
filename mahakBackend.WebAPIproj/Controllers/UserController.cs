@@ -1,8 +1,8 @@
 ﻿using mahakBackend.Core.Domain.entities;
-using mahakBackend.Core.Domain.Irepository;
 using mahakBackend.Core.Domain.Iservice;
 using Microsoft.AspNetCore.Mvc;
-using System.Reflection.Metadata.Ecma335;
+using mahakBackend.WebAPIproj.ViewModel;
+
 
 namespace mahakBackend.WebAPIproj.Controllers
 {
@@ -23,6 +23,7 @@ namespace mahakBackend.WebAPIproj.Controllers
             {
                 return BadRequest("User data is null");
             }
+            
             _userService.Add(user);
             return Ok("User added successfully.");
         }
@@ -35,7 +36,7 @@ namespace mahakBackend.WebAPIproj.Controllers
             {
                 return BadRequest("There is no user with this ID!");
             }
-            return Ok(user);
+            return Ok(UserViewModel.mapEntityToModel(user));
         }
 
         [HttpPut]
@@ -63,7 +64,17 @@ namespace mahakBackend.WebAPIproj.Controllers
         [HttpGet]
         public IActionResult GetAllUsers()
         {
-            return Ok(_userService.GetAllUsers());
+            var userList = _userService.GetAllUsers();
+            if (userList == null)
+            {
+                return BadRequest("user list is null! ");
+            }
+            var users = new List<UserViewModel>();
+            foreach(UserEntity user in userList)
+            {
+                users.Add(UserViewModel.mapEntityToModel(user));
+            }
+            return Ok(users);
         }
     }
 }

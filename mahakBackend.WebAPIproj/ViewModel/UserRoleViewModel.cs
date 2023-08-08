@@ -1,6 +1,4 @@
-﻿using mahakBackend.Core.Domain.entities;
-
-namespace mahakBackend.WebAPIproj.ViewModel
+﻿namespace mahakBackend.WebAPIproj.ViewModel
 {
     public class UserRoleViewModel
     {
