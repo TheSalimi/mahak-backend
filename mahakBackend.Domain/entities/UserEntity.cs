@@ -12,5 +12,6 @@
         public string? Description { get; set; }
         public bool isAdded { get; set;}
         public int? imageId { get; set; }
+        public string phoneNumber { get; set; }
     }
 }
