@@ -28,6 +28,11 @@ namespace mahakBackend.Infrastructure.Repositories
             }
         }
 
+        public IEnumerable<User_RoleEntity> GetAllUserRoles()
+        {
+            return _DbContext.UserRole.ToList();
+        }
+
         public IEnumerable<RoleEntity> GetRolesByUserId(int id)
         {
             return _DbContext.Roles.Where(

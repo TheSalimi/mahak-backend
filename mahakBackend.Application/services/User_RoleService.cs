@@ -31,5 +31,10 @@ namespace mahakBackend.Core.Application.services
         {
             return _user_roleRepository.GetUsersByRoleId(RoleId);
         }
+
+        public IEnumerable<User_RoleEntity> GetAllUserRoles()
+        {
+            return _user_roleRepository.GetAllUserRoles();
+        }
     }
 }

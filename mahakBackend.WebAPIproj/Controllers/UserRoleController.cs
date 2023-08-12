@@ -40,7 +40,7 @@ namespace mahakBackend.WebAPIproj.Controllers
             User_Role.Role = role;
                 
             _userRoleService.Add(User_Role);
-            return Ok("user-rule added");
+            return Ok();
         }
 
         [HttpDelete]
@@ -53,6 +53,12 @@ namespace mahakBackend.WebAPIproj.Controllers
         [HttpGet("roles/{id}")]
         public IActionResult GetRolesById(int id) { 
             return Ok(_userRoleService.GetRolesByUserId(id));
+        }
+
+        [HttpGet("allUserRoles")]
+        public IActionResult GetAllUserRoles()
+        {
+            return Ok(_userRoleService.GetAllUserRoles());
         }
 
         [HttpGet("users/{roleId:int}")]

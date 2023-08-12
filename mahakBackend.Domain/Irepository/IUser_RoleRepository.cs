@@ -8,5 +8,6 @@ namespace mahakBackend.Core.Domain.Irepository
         IEnumerable<UserEntity> GetUsersByRoleId(int RoleId);
         void Add(User_RoleEntity user_role);
         void Delete(int id);
+        IEnumerable<User_RoleEntity> GetAllUserRoles();
     }
 }
