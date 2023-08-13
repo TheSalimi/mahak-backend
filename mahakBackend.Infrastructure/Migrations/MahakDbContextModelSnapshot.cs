@@ -30,15 +30,16 @@ namespace mahakBackend.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ColorId")
-                        .HasColumnType("int");
+                    b.Property<byte?>("ColorId")
+                        .HasColumnType("tinyint");
 
-                    b.Property<int?>("IconId")
-                        .HasColumnType("int");
+                    b.Property<byte?>("IconId")
+                        .HasColumnType("tinyint");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
