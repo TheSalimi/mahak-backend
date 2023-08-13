@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using mahakBackend.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using mahakBackend.Infrastructure.Data;
 namespace mahakBackend.Infrastructure.Migrations
 {
     [DbContext(typeof(MahakDbContext))]
-    partial class MahakDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230813052953_configureOnUserEntity")]
+    partial class configureOnUserEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

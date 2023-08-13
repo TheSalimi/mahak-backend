@@ -10,6 +10,5 @@ namespace mahakBackend.Core.Domain.entities
 
         public RoleEntity Role { get; set; }
         public UserEntity User { get; set; }
-
     }
 }
