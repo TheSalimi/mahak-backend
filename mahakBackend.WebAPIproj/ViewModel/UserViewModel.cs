@@ -15,10 +15,12 @@ namespace mahakBackend.WebAPIproj.ViewModel
         public bool isAdded { get; set; }
         public int? imageId { get; set; }
         public string phoneNumber { get; set; }
+        public bool? isActive { get; set; }
 
         public static UserViewModel mapEntityToModel(UserEntity user)
         {
             UserViewModel newUser = new UserViewModel();
+
             newUser.Id = user.Id;
             newUser.Name = user.Name;
             newUser.Email = user.Email;
@@ -30,6 +32,7 @@ namespace mahakBackend.WebAPIproj.ViewModel
             newUser.LastActivity = user.LastActivity;
             newUser.JoinDate = user.JoinDate;
             newUser.imageId = user.imageId;
+            newUser.isActive = user.isActive;
 
             return newUser;
         }

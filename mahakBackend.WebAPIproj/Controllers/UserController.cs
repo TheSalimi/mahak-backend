@@ -62,6 +62,7 @@ namespace mahakBackend.WebAPIproj.Controllers
             {
                 user.Description = description;
                 user.isAdded = true;
+                user.isActive = true;
                 user.JoinDate = DateTime.Now;
                 user.LastActivity = DateTime.Now;
                 user.UserCode = (user.Id + 100000).ToString();

@@ -13,5 +13,6 @@
         public bool isAdded { get; set;}
         public int? imageId { get; set; }
         public string phoneNumber { get; set; }
+        public bool? isActive { get; set; }
     }
 }

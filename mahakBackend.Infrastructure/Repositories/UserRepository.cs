@@ -54,6 +54,7 @@ namespace mahakBackend.Infrastructure.Repositories
                 SelectedUser.isAdded = user.isAdded;
                 SelectedUser.imageId = user.imageId;
                 SelectedUser.phoneNumber = user.phoneNumber;
+                SelectedUser.isActive = user.isActive;
                 _DbContext.SaveChanges();
             }
         }
